@@ -11,10 +11,11 @@ export enum  Days{
   Sat ,
   Sun ,
 };
- 
-export const isWeekend=(day:Days)=> {
+
+
+export const isWeekend =(day:Days):boolean=> {
   if(Days.Sat | Days.Sun ) {
     return true
-  } else false
+  } else return false
   
 }
