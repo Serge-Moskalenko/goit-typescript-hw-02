@@ -3,13 +3,18 @@
   і повертає boolean значення, що вказує, чи це день робочий чи вихідний.
 */
 export enum  Days{
-  Mon = "false",
-  Tue = "false",
-  Wed = "false",
-  Thu = "false",
-  Fri = "false",
-  Sat = "true",
-  Sun = "true",
+  Mon ,
+  Tue ,
+  Wed ,
+  Thu ,
+  Fri ,
+  Sat ,
+  Sun ,
 };
  
-export const isWeekend=(day:Days):string=> day;
+export const isWeekend=(day:Days)=> {
+  if(Days.Sat | Days.Sun ) {
+    return true
+  } else false
+  
+}

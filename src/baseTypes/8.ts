@@ -2,12 +2,10 @@
   Створіть тип "Gender", використовуючи union type, 
   який може містити значення "male", "female". Створіть змінну myGender цього типу.
 */
-type Gender ={
-  "male": string,
-  "female": string
-}
+type Gender = "male" |"female";
 
-const myGender:Gender={
-  "male":"qwe",
-  "female":"qwe"
-};
+ 
+
+const myGender:Gender= "female";
+
+const myGender_2 :Gender="male";
